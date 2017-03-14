@@ -1,8 +1,15 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- App name -->
 
     <string name="app_name">Lecturio Qetter</string>
+
+    <!-- Formatting -->
+
+    <!-- string to format queries for the Lecturio API.
+     for a query "Anatomy", the Lecturio API wants "%Anatomy%"
+     -->
+    <string name="format_query">%%<xliff:g id="query_string">%1$s</xliff:g>%%</string>
 
     <!-- UI text -->
 
@@ -11,5 +18,7 @@
     <string name="submit">Submit</string>
 
     <string name="message_info_enter_topic">Enter a topic above, such as Anatomy</string>
+
+    <string name="message_error_search_result">Error in search result</string>
 
 </resources>

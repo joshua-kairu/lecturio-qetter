@@ -29,6 +29,10 @@ android {
 
 // extensions
 ext {
+    butterKnifeVersion = "8.4.0"
+    gsonVersion = "2.8.0"
+    retrofitVersion = "2.2.0"
+    rxJavaVersion = "1.2.6"
     supportLibraryVersion = "25.0.1"
 }
 
@@ -37,6 +41,26 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+
+    // butterknife
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterKnifeVersion"
+    compile "com.jakewharton:butterknife:$butterKnifeVersion"
+
+    // eventbus
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    // gson
+    compile "com.google.code.gson:gson:$gsonVersion"
+
+    // retrofit
+    compile "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    compile "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    compile "com.squareup.retrofit2:adapter-rxjava:$retrofitVersion"
+
+    compile 'com.squareup.okhttp3:logging-interceptor:3.2.0'
+
+    // rx java
+    compile "io.reactivex:rxjava:$rxJavaVersion"
 
     // support library
     compile "com.android.support:appcompat-v7:$supportLibraryVersion"

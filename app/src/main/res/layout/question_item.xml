@@ -14,9 +14,7 @@
 
     android:layout_height="@dimen/listview_item_height"
 
-    android:paddingStart="@dimen/layout_padding"
-
-    android:paddingEnd="@dimen/layout_padding"
+    android:layout_margin="@dimen/layout_padding"
 
     >
 
