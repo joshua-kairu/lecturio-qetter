@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- App name -->
+
+    <string name="app_name">Lecturio Qetter</string>
+
+    <!-- UI text -->
+
+    <string name="search_hint">Search questions by topic</string>
+
+    <string name="submit">Submit</string>
+
+    <string name="message_info_enter_topic">Enter a topic above, such as Anatomy</string>
+
+</resources>
