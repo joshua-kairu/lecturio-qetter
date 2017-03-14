@@ -85,7 +85,7 @@ public class QuestionViewHolder extends RecyclerView.ViewHolder {
         final String[] answers =
                 Utility.getAnswersForQuestion( mQuestions.get( getAdapterPosition() ) );
 
-        builder.setTitle( "Pick an answer" )
+        builder.setTitle( mQuestions.get( getAdapterPosition() ).getTitle() )
                 .setItems( answers, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick( DialogInterface dialogInterface, int i ) {
